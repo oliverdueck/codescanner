@@ -69,6 +69,7 @@ function App() {
       console.log("Initialization finished. Ready to start");
       Quagga.start();
       setRunning(true)
+      document.getElementById('result').style.backgroundColor = 'white'
     });
   
     Quagga.onProcessed(function (result) {
