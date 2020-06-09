@@ -4,7 +4,7 @@ input{
   margin: auto;
   padding: 10px;
   width: 100%;
-  height: 100px;
+  height: 50px;
 }
 
 #result{
@@ -12,7 +12,7 @@ input{
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 200px;
+  height: 80px;
   background-color: white;
 }
 
