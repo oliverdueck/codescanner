@@ -2,7 +2,6 @@ input{
   background-color: white;
   border: 1px solid black;
   margin: auto;
-  padding: 10px;
   width: 100%;
   height: 50px;
 }
@@ -12,13 +11,14 @@ input{
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 80px;
+  height: 150px;
   background-color: white;
 }
 
 #number{
-  font-size: larger;
+  font-size: x-large;
   text-align: center;
+  font-weight: bold;
 }
 
 #scanner-container{
@@ -34,4 +34,8 @@ input{
   top: 0;
   left: 0;
   width: 100%;
+}
+
+.hide{
+  z-index: -1;
 }
