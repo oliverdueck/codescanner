@@ -126,7 +126,12 @@ function App() {
       <div id="scanner-container"></div>
       <input type="button" id="btn" value={(running ? "Stop" : "Start") + " the scanner"} onClick={toggleScanner} />
       <p id='number'> </p>
+      <from>
+
+      <input type='text'/>
+      </from>
       <div id='result'>
+      
       </div>
     </div>
   );
