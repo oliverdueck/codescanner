@@ -8,7 +8,9 @@ export default class CSVParser {
 
             return reader.read().then(function (result) {
                 let data = decoder.decode(result.value);
-                return csv()
+                return csv({
+                    delimiter:';'
+                })
                     .fromString(data)
                     .then((jsonObj) => {
                         return jsonObj;
