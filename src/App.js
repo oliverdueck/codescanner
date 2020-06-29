@@ -27,6 +27,7 @@ function App() {
         <input autoFocus={true} type='text' id='scanner_input' onInput={processEAN} />
       </form>
       <div id='result' />
+      <p id="text"></p>
     </div>
   );
 
@@ -49,6 +50,7 @@ function App() {
   function warnUserOfWrongEAN(ean) {
     document.getElementById('result').style.backgroundColor = '#ffc800';
     document.getElementById('scanned_EAN').innerHTML = 'EAN-Fehler: ' + ean;
+    document.getElementById('text').innerHTML = ''
     setTimeout(() => { document.getElementById('scanner_input').value = ''; }, 200);
   }
 
@@ -73,9 +75,11 @@ function App() {
     if (wasFound) {
       let entry = csvData[foundAtIndex];
       document.getElementById('result').style.backgroundColor = (entry.color === '' ? '#32a852' : entry.color);
+      entry.text && (document.getElementById('text').innerHTML = entry.text)
     }
     else {
       document.getElementById('result').style.backgroundColor = 'red';
+      document.getElementById('text').innerHTML = ''
     }
   }
 
