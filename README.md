@@ -16,3 +16,5 @@ Die EANs werden als CSV unter `public/data.csv` im folgenden Format bereitgestel
 - Wenn keine Farbe angegeben wird, wird grün verwendet.
 - Ist das Format der EAN unbekannt, wird gelb ausgegeben.
 - Wird die EAN nicht gefunden, rot.
+
+
